@@ -1,0 +1,52 @@
+/* --------------- Home ----------------- */
+
+h1 {
+    color: #3b82f6;
+}
+
+h2 {
+    color: #2563eb;
+}
+
+/* NavBar Colors */
+
+.my-btn-full:link, 
+.my-btn-full:visited {
+    color: #fff;
+    background-color: #3b82f6;
+    border: 2px solid #3b82f6;
+    transition: background-color 0.4s border 0.4s;
+}
+
+.my-btn-full:hover, 
+.my-btn-full:active {
+    background-color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.my-btn-ghost:link, 
+.my-btn-ghost:visited {
+    color: #2563eb;
+
+    border: 2px solid #2563eb;
+    transition: background-color 0.4s border 0.4s;
+}
+
+.my-btn-ghost:hover, 
+.my-btn-ghost:active {
+    color: #fff;
+    background-color: #2563eb;
+}
+
+.my-link:link,
+.my-link:visited {
+    color: #3b82f6;
+    border-bottom: 1px solid transparent;
+    transition: color 0.4s border 0.4s;
+}
+
+.my-link:hover,
+.my-link:active {
+    color: #2563eb;
+    border-bottom: 1px solid #2563eb;
+}

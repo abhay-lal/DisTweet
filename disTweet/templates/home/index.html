@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisTweet</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="{% static 'css\color.css'%}">
+    <link rel="stylesheet" href="{% static 'css\index.css'%}">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <style>
+        header {
+            position: relative;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.797), rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.578)), url("{% static 'img/home.jpeg' %}");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="navbar my_top_nav">
+            <a class="navbar-brand mb-0 h1" href="#">DisTweet</a>
+
+            <ul class="nav justify-content-end">    
+                <li class="nav-item">
+                    <a class="nav-link my-link active" aria-current="page" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link my-link" href="#">Contribute</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-md my-btn-full" href="#" role="button">Login</a>
+                </li>
+            </ul>
+
+        </div>
+    
+
+        <div class="highlight">
+            <h1>Every Life Matters</h1>
+            <div class="sub-heading">
+                <h2 class="heading-text heading-active">
+                    Over 10000 Accidents a day
+                </h2>
+                <h2 class="heading-text">
+                    6000 tweets reported
+                </h2>
+                <h2 class="heading-text">
+                    1000 lives saved
+                </h2>
+            </div>
+
+            <div class="heading-btns">
+                <a class="btn btn-md my-btn-full" href="#">Search</a>
+                <a class="btn btn-md my-btn-ghost" href="#">About Us</a>
+            </div>
+            
+        </div>
+
+    </header>
+
+</body>
+</html>
