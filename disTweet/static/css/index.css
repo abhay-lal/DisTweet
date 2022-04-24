@@ -1,5 +1,27 @@
 body {
     font-size: 18px;
+    color: rgb(235, 235, 235);
+    background: #0f172a;
+}
+
+section {
+    padding: 12% 0;
+}
+
+.section-heading {
+    display: inline-block;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.hor-line {
+    content: '';
+    width: 20%;
+    margin: 0 5% 1.5%;
+    height: 1px;
+    border-radius: 200px;
+    border-bottom: 3.5px solid #2563eb;
+    display: inline-block;
 }
 
 .my_top_nav {
@@ -58,4 +80,79 @@ h2 {
 
 .heading-btns .btn {
     margin: 0 4%;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.about-imgs {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    height: 500px;
+}
+
+.abt-img {
+    width: 60%;
+    box-shadow: 4px 6px 8px #081f51;
+    background-color: #000;
+}
+
+.about-imgs img {
+    opacity: 0.7;
+    width: 100%;
+    transition: all 1s;
+}
+
+.img-bot {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    z-index: -1;
+}
+
+.img-mid {
+    position: absolute;
+    top: -5%;
+    left: 35%;
+    z-index: 0;
+}
+
+.img-top {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    z-index: 1;
+}
+
+.about-imgs:hover img {
+    opacity: 0.9;
+}
+
+
+.about-content {
+    position: relative;
+    padding: 12% 0;
+}
+
+/* .about-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 20px;
+    height: 40px;
+    border-radius: 5px;
+    border-left: 4px solid #3b82f6;
+    border-right: 4px solid #2563eb;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+} */
+
+
+
+.noraml-content {
+    margin: 5% auto 0;
+    line-height: 1.5;
+    max-width: 85%;
 }
