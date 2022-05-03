@@ -50,3 +50,17 @@ h2 {
     color: #2563eb;
     border-bottom: 1px solid #2563eb;
 }
+
+.card {
+    text-align: center;
+    background: transparent;
+    color: #3b82f6;
+}
+
+.card-body{
+    background: transparent;
+}
+
+.normal-content {
+    color: #fff;
+}

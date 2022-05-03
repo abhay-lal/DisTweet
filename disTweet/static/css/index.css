@@ -14,10 +14,14 @@ section {
     text-transform: capitalize;
 }
 
+.section-heading-block {
+    text-align: center;
+}
+
 .hor-line {
-    content: '';
+    content: ' ';
     width: 20%;
-    margin: 0 5% 1.5%;
+    margin: 0.7% 2%;
     height: 1px;
     border-radius: 200px;
     border-bottom: 3.5px solid #2563eb;
@@ -155,4 +159,9 @@ h2 {
     margin: 5% auto 0;
     line-height: 1.5;
     max-width: 85%;
+}
+
+
+.workings {
+    margin-top: 5%;
 }
