@@ -10,6 +10,20 @@ h2 {
 
 /* NavBar Colors */
 
+.logout-btn {
+    color: #fff;
+    background-color: #3b82f6;
+    border-radius: 240px;
+    padding: 3px 17px;
+    border: 2px solid #3b82f6;
+    transition: background-color 0.4s border 0.4s;
+}
+
+.logout-btn:hover {
+    background-color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
 .my-btn-full:link, 
 .my-btn-full:visited {
     color: #fff;
