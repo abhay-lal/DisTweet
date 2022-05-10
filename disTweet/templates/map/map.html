@@ -74,6 +74,11 @@
             subdomains:['mt0','mt1','mt2','mt3']
         }).addTo(map);
 
+        map.on('click', function(e) {
+            var marker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
+            marker.bindPopup(`<b>Lat: ${e.latlng.lat}, Lng: ${e.latlng.lng}}</b>`)
+        })
+
     </script>
 </body>
 </html>
