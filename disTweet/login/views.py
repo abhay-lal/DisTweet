@@ -13,7 +13,7 @@ def login(request):
         if user is not None:
             auth_login(request, user)
             
-        return redirect('/')
+        return redirect('/map')
 
     return render(request, 'login/login.html')
 
