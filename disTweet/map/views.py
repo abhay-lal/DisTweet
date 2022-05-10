@@ -5,5 +5,5 @@ from django.contrib.auth import logout
 def mapy(request):
     if request.method == 'POST':
         logout(request)
-        return redirect(request, '/')
+        return redirect('/')
     return render(request, 'map/map.html')
