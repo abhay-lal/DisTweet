@@ -16,11 +16,13 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from map import views
+from map import views as mapview
+from . import views as eventview
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("home.urls")),
     path('useraccount/', include("login.urls")),
-    path('map', views.mapy, name='map')
+    path('map', mapview.mapy, name='map'),
+    path('topic/twitterdata1', eventview.get_message, name='map'),
 ]

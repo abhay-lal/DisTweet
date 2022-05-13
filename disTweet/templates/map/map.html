@@ -67,17 +67,28 @@
     </div>
 
     <script>
-        var map = L.map('map').setView([51.505, -0.09], 2.3);
+        let map = L.map('map').setView([51.505, -0.09], 2);
 
-        googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+        L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
             maxZoom: 20,
             subdomains:['mt0','mt1','mt2','mt3']
         }).addTo(map);
 
-        map.on('click', function(e) {
-            var marker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
-            marker.bindPopup(`<b>Lat: ${e.latlng.lat}, Lng: ${e.latlng.lng}}</b>`)
-        })
+        const source = new EventSource("/topic/twitterdata1" );
+
+        source.onopen = function (ev) {
+            console.log("Event Started");
+        }
+
+        source.onmessage = function (ev) {
+            let obj = JSON.parse(ev.data);
+            if(!obj.place) return;
+            let lat = obj.place.bounding_box.coordinates[0][0][1];
+            let lng = obj.place.bounding_box.coordinates[0][0][0];
+            L.marker([lat, lng]).addTo(map).bindPopup(`Tweet: ${obj.text}`).openPopup();;
+            console.log(obj)
+
+        }
 
     </script>
 </body>
